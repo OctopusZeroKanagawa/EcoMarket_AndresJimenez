@@ -4,7 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="img/icons/logo.png" alt="Logo EcoMarket" />
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="views/productos.html">Productos</a></li>
+            <li><a href="views/sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="views/contacto.html">Contacto</a></li>
+          </ul>
+
+          <div class="nav-icons">
+            <button type="button">
+              <img src="img/icons/cart.png" alt="Carrito" />
+            </button>
+
+            <button type="button">
+              <img src="img/icons/search.png" alt="Buscar" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>EcoMarket</h1>
+
+            <p>Compra responsable, vive sostenible</p>
+
+            <a href="views/productos.html" class="btn"> Explorar Productos </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-products">
+        <div class="container">
+          <div class="section-header">
+            <h2>Productos Destacados</h2>
+          </div>
+
+          <div class="products-grid"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+        <ul class="social-links">
+          <li>
+            <a href="#"><img src="img/icons/facebook.png" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/twitter.png" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/icons/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
