@@ -24,6 +24,7 @@
   --spacing-lg: 2rem;
 
   --transition-standard: 0.3s ease;
+  --bg: #eef5ee;
 }
 
 html {
@@ -37,8 +38,6 @@ body {
 
   line-height: 1.6;
   min-height: 100vh;
-
-  -webkit-font-smoothing: antialiased;
 }
 
 img {
