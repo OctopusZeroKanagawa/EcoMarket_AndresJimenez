@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>EcoMarket</title>
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -28,11 +28,11 @@
 
           <div class="nav-icons">
             <button type="button">
-              <img src="img/icons/cart.png" alt="Carrito" />
+              <img src="img/icons/search.png" alt="Buscar" />
             </button>
 
-            <button type="button">
-              <img src="img/icons/search.png" alt="Buscar" />
+            <button type="button" aria-label="Carrito de compras">
+              <img src="img/icons/cart.png" alt="Carrito" />
             </button>
           </div>
         </nav>
@@ -45,9 +45,18 @@
           <div class="hero-content">
             <h1>EcoMarket</h1>
 
-            <p>Compra responsable, vive sostenible</p>
+            <h2>Compra responsable, vive sostenible</h2>
 
-            <a href="views/productos.html" class="btn"> Explorar Productos </a>
+            <p>
+              Descubre cientos de productos ecológicos que cuidan el planeta sin
+              sacrificar calidad ni estilo.
+            </p>
+
+            <div class="hero-actions">
+              <a href="views/productos.html" class="btn">
+                Explorar Productos
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -56,28 +65,264 @@
         <div class="container">
           <div class="section-header">
             <h2>Productos Destacados</h2>
+
+            <p>
+              Los favoritos de nuestros clientes, seleccionados por su calidad y
+              sostenibilidad.
+            </p>
           </div>
 
-          <div class="products-grid"></div>
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/cafe-mug.png"
+                  alt="Mug reutilizable ecológico"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Mug Reutilizable EcoBlend</h3>
+
+                <p class="product-card__desc">
+                  Taza reutilizable elaborada con materiales ecológicos y
+                  acabado térmico.
+                </p>
+
+                <p class="product-card__price">$32.000</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/cepillo-bambu.webp"
+                  alt="Cepillo dental de bambú"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Cepillo Dental de Bambú</h3>
+
+                <p class="product-card__desc">
+                  Alternativa biodegradable con mango de bambú natural y cerdas
+                  suaves.
+                </p>
+
+                <p class="product-card__price">$8.500</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/fire-flower.jpg"
+                  alt="Fire Flower ecológica"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Fire Flower Orgánica</h3>
+
+                <p class="product-card__desc">
+                  Flor decorativa ecológica cultivada bajo prácticas
+                  sostenibles.
+                </p>
+
+                <p class="product-card__price">$18.000</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/jabon-carbon-activado.webp"
+                  alt="Jabón de carbón activado"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Jabón de Carbón Activado</h3>
+
+                <p class="product-card__desc">
+                  Limpieza profunda con ingredientes naturales y aceites
+                  esenciales.
+                </p>
+
+                <p class="product-card__price">$15.000</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/leche-almendras.jpg"
+                  alt="Leche de almendras natural"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Leche de Almendras Natural</h3>
+
+                <p class="product-card__desc">
+                  Bebida vegetal sin conservantes ni azúcares añadidos.
+                </p>
+
+                <p class="product-card__price">$13.500</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__img">
+                <img
+                  src="img/products/semillas-ermitano.jpg"
+                  alt="Semillas ecológicas"
+                />
+
+                <button
+                  class="product-card__fav"
+                  aria-label="Agregar a favoritos"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="product-card__body">
+                <h3 class="product-card__name">Semillas del Ermitaño</h3>
+
+                <p class="product-card__desc">
+                  Semillas orgánicas ideales para cultivos domésticos
+                  sostenibles.
+                </p>
+
+                <p class="product-card__price">$11.000</p>
+              </div>
+
+              <div class="product-card__footer">
+                <a href="views/productos.html" class="btn"> Ver más </a>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 2.5rem">
+            <a href="views/productos.html" class="btn btn-outline">
+              Ver todos los productos →
+            </a>
+          </div>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container">
-        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
-        <ul class="social-links">
-          <li>
-            <a href="#"><img src="img/icons/facebook.png" alt="Facebook" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons/twitter.png" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="img/icons/instagram.png" alt="Instagram"
-            /></a>
-          </li>
-        </ul>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>EcoMarket</h4>
+
+            <p>
+              Productos sostenibles diseñados para un estilo de vida responsable
+              con el planeta.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Política de Devoluciones</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+
+            <p>📧 hola@ecomarket.co</p>
+            <p>📞 +57 300 123 4567</p>
+            <p>📍 Cúcuta, Colombia</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <img src="img/icons/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Twitter">
+                <img src="img/icons/twitter.png" alt="Twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img src="img/icons/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
