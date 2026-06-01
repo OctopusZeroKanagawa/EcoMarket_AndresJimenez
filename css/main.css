@@ -1,3 +1,6 @@
+@import url("layout.css");
+@import url("components.css");
+@import url("animations.css");
 * {
   margin: 0;
   padding: 0;

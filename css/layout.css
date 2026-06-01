@@ -12,8 +12,10 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  gap: 1rem;
 
   padding-block: 0.9rem;
 }
@@ -40,10 +42,11 @@ header {
 }
 
 .nav-links {
-  display: none;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  gap: var(--sp-lg);
+  gap: 1rem;
 }
 
 .nav-links a {
@@ -338,11 +341,18 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  .nav-links {
-    display: flex;
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
+  .nav-links {
+    gap: var(--sp-lg);
+  }
+}
+
+@media (min-width: 1024px) {
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
