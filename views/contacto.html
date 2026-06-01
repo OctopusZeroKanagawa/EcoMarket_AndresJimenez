@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto — EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../img/icons/logo.png" alt="Logo EcoMarket" />
+            <span class="logo-text">EcoMarket</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+          </ul>
+          <div class="nav-icons">
+            <button type="button" aria-label="Buscar">
+              <img src="../img/icons/search.png" alt="Buscar" />
+            </button>
+            <button type="button" aria-label="Carrito">
+              <img src="../img/icons/cart.png" alt="Carrito" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="container">
+          <h1>📬 Contáctanos</h1>
+          <p>
+            Estamos aquí para ayudarte. Escríbenos y te responderemos pronto.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-form">
+              <h2>Envíanos un mensaje</h2>
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo *</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    minlength="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Correo electrónico *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="asunto">Asunto *</label>
+                  <input
+                    type="text"
+                    id="asunto"
+                    name="asunto"
+                    placeholder="¿En qué podemos ayudarte?"
+                    minlength="4"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje aquí..."
+                    minlength="10"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensaje ✉️</button>
+              </form>
+            </div>
+
+            <div class="contact-info">
+              <h2>Información de Contacto</h2>
+              <p>
+                No dudes en comunicarte con nosotros por cualquiera de estos
+                canales. Respondemos en menos de 24 horas.
+              </p>
+
+              <div class="info-cards">
+                <div class="info-card">
+                  <span class="info-card__icon">📧</span>
+                  <div>
+                    <h4>Correo Electrónico</h4>
+                    <p>hola@ecomarket.co</p>
+                    <p>soporte@ecomarket.co</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <span class="info-card__icon">📞</span>
+                  <div>
+                    <h4>Teléfono</h4>
+                    <p>+57 300 123 4567</p>
+                    <p>Lun – Vie: 8am a 6pm</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <span class="info-card__icon">📍</span>
+                  <div>
+                    <h4>Dirección</h4>
+                    <p>Av. 0 #12-34, Centro<br />Cúcuta, Norte de Santander</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <span class="info-card__icon">🕐</span>
+                  <div>
+                    <h4>Horario de Atención</h4>
+                    <p>Lunes a Viernes: 8:00am – 6:00pm</p>
+                    <p>Sábados: 9:00am – 1:00pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>¿Dónde estamos?</h2>
+            <p>Visítanos en nuestra sede principal en Cúcuta</p>
+          </div>
+          <div class="map-container">
+            <div class="map-pin">
+              <span>📍</span>
+              <p>EcoMarket — Cúcuta, Norte de Santander</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Síguenos en Redes Sociales</h2>
+            <p>
+              Conecta con nuestra comunidad y descubre consejos para un estilo
+              de vida más sostenible.
+            </p>
+          </div>
+          <div class="social-grid">
+            <a href="#" class="social-item" aria-label="Facebook">
+              <div class="social-item__icon social-item__icon--fb">📘</div>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-item" aria-label="Twitter">
+              <div class="social-item__icon social-item__icon--tw">🐦</div>
+              <span>Twitter / X</span>
+            </a>
+            <a href="#" class="social-item" aria-label="Instagram">
+              <div class="social-item__icon social-item__icon--ig">📸</div>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-item" aria-label="YouTube">
+              <div class="social-item__icon social-item__icon--yt">▶️</div>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo-text">EcoMarket</span>
+            <p>
+              Somos una plataforma comprometida con el consumo consciente y la
+              sostenibilidad del planeta.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navegar</h4>
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Devoluciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+            <p>📧 hola@ecomarket.co</p>
+            <p>📞 +57 300 123 4567</p>
+            <p>📍 Cúcuta, Colombia</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><img src="../img/icons/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"
+                ><img src="../img/icons/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"
+                ><img src="../img/icons/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Youtube"
+                ><img src="../img/icons/youtube.png" alt="Youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
