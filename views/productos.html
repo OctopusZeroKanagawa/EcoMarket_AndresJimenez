@@ -1,0 +1,773 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos – EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../img/icons/logo.png" alt="Logo EcoMarket" />
+            <span class="logo-text">EcoMarket</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html" class="active">Productos</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          <div class="nav-icons">
+            <button type="button" aria-label="Buscar">
+              <img src="../img/icons/search.png" alt="Buscar" />
+            </button>
+            <button type="button" aria-label="Carrito">
+              <img src="../img/icons/cart.png" alt="Carrito" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>🌿 Catálogo de Productos</h1>
+        <p>
+          Explora nuestra selección de más de 100 productos ecológicos y
+          sustentables
+        </p>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="catalog-layout">
+          <aside class="catalog-sidebar">
+            <div class="sidebar">
+              <h3 class="sidebar-title">Filtros</h3>
+              <div class="filter-group">
+                <h4>Categoría</h4>
+                <label><input type="checkbox" /> Hogar</label>
+                <label><input type="checkbox" /> Moda</label>
+                <label><input type="checkbox" /> Cuidado Personal</label>
+                <label><input type="checkbox" /> Alimentos</label>
+              </div>
+              <div class="filter-group">
+                <h4>Rango de Precio</h4>
+                <input
+                  type="range"
+                  min="0"
+                  max="200000"
+                  step="5000"
+                  value="100000"
+                />
+                <div class="price-labels">
+                  <span>$0</span><span>$200.000</span>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h4>Disponibilidad</h4>
+                <label><input type="radio" name="stock" checked /> Todos</label>
+                <label><input type="radio" name="stock" /> En Stock</label>
+                <label><input type="radio" name="stock" /> Agotados</label>
+              </div>
+
+              <div class="filter-group">
+                <h4>Ordenar por</h4>
+                <label
+                  ><input type="radio" name="sort" checked /> Relevancia</label
+                >
+                <label><input type="radio" name="sort" /> Menor precio</label>
+                <label><input type="radio" name="sort" /> Mayor precio</label>
+                <label><input type="radio" name="sort" /> Más nuevos</label>
+              </div>
+
+              <button
+                class="btn"
+                style="width: 100%; text-align: center; margin-top: 0.5rem"
+              >
+                Aplicar Filtros
+              </button>
+            </div>
+          </aside>
+
+          <div class="catalog-main">
+            <div class="catalog-topbar">
+              <div class="search-bar">
+                <span>🔍</span>
+                <input type="text" placeholder="Buscar productos..." />
+              </div>
+              <p class="catalog-count">
+                Mostrando <strong>20</strong> de 87 productos
+              </p>
+            </div>
+
+            <div class="catalog-grid">
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/anillo-natural.webp"
+                    alt="Anillo Natural Artesanal"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav1" class="fav-checkbox" />
+                  <label
+                    for="fav1"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Anillo Natural Artesanal</h3>
+                  <p class="product-card__desc">
+                    Elaborado con materiales naturales y acabados ecológicos.
+                  </p>
+                  <p class="product-card__price">$25.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/cafe-mug.png"
+                    alt="Mug Reutilizable EcoBlend"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav2" class="fav-checkbox" />
+                  <label
+                    for="fav2"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Mug Reutilizable EcoBlend</h3>
+                  <p class="product-card__desc">
+                    Conserva la temperatura y reduce el uso de desechables.
+                  </p>
+                  <p class="product-card__price">$32.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/cañapescarbambu.webp"
+                    alt="Caña de Pescar Bambú"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav3" class="fav-checkbox" />
+                  <label
+                    for="fav3"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Caña de Pescar Bambú</h3>
+                  <p class="product-card__desc">
+                    Fabricada con bambú sostenible y acabados resistentes.
+                  </p>
+                  <p class="product-card__price">$85.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/castillo-gatos.jpg"
+                    alt="Castillo para Gatos Reciclado"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav4" class="fav-checkbox" />
+                  <label
+                    for="fav4"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Castillo para Gatos</h3>
+                  <p class="product-card__desc">
+                    Espacio de juego y descanso fabricado con materiales
+                    reciclables.
+                  </p>
+                  <p class="product-card__price">$120.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/cepillo-bambu.webp"
+                    alt="Cepillo Dental de Bambú"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav5" class="fav-checkbox" />
+                  <label
+                    for="fav5"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Cepillo Dental de Bambú</h3>
+                  <p class="product-card__desc">
+                    Alternativa biodegradable para una higiene bucal sostenible.
+                  </p>
+                  <p class="product-card__price">$8.500</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/chocolate-casero.jpg"
+                    alt="Chocolate Casero Artesanal"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav6" class="fav-checkbox" />
+                  <label
+                    for="fav6"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Chocolate Casero Artesanal</h3>
+                  <p class="product-card__desc">
+                    Elaborado con cacao seleccionado y procesos responsables.
+                  </p>
+                  <p class="product-card__price">$12.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/crema-cuerpo.jpg"
+                    alt="Crema Corporal Natural"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav7" class="fav-checkbox" />
+                  <label
+                    for="fav7"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Crema Corporal Natural</h3>
+                  <p class="product-card__desc">
+                    Hidratación profunda con ingredientes de origen vegetal.
+                  </p>
+                  <p class="product-card__price">$18.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/Cucharas.jpg"
+                    alt="Cucharas Ecológicas"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav8" class="fav-checkbox" />
+                  <label
+                    for="fav8"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Cucharas Ecológicas</h3>
+                  <p class="product-card__desc">
+                    Juego reutilizable ideal para reducir plásticos de un solo
+                    uso.
+                  </p>
+                  <p class="product-card__price">$15.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/fertilizante-plantas.jpg"
+                    alt="Fertilizante Orgánico"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav9" class="fav-checkbox" />
+                  <label
+                    for="fav9"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Fertilizante Orgánico</h3>
+                  <p class="product-card__desc">
+                    Nutrición natural para tus plantas sin químicos dañinos.
+                  </p>
+                  <p class="product-card__price">$22.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/fire-flower.jpg"
+                    alt="Semillas Fire Flower"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav10" class="fav-checkbox" />
+                  <label
+                    for="fav10"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Semillas Fire Flower</h3>
+                  <p class="product-card__desc">
+                    Flores silvestres de colores para jardines biodiversos.
+                  </p>
+                  <p class="product-card__price">$9.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/FOTO-ESENCIA-DE-VAINILLA-100-NATURAL-ALMA-scaled.webp"
+                    alt="Esencia de Vainilla Natural"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav11" class="fav-checkbox" />
+                  <label
+                    for="fav11"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">
+                    Esencia de Vainilla 100% Natural
+                  </h3>
+                  <p class="product-card__desc">
+                    Extracto puro sin aditivos, ideal para repostería artesanal.
+                  </p>
+                  <p class="product-card__price">$28.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/HongoMedicinal.jpg"
+                    alt="Hongo Medicinal"
+                  />
+                  <span class="product-card__badge badge badge-agotado"
+                    >Agotado</span
+                  >
+                  <input type="checkbox" id="fav12" class="fav-checkbox" />
+                  <label
+                    for="fav12"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Hongo Medicinal Reishi</h3>
+                  <p class="product-card__desc">
+                    Suplemento natural con propiedades adaptógenas e
+                    inmunoestimulantes.
+                  </p>
+                  <p class="product-card__price">$45.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-outline">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/Hongo.webp"
+                    alt="Kit Cultivo de Hongos"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav13" class="fav-checkbox" />
+                  <label
+                    for="fav13"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Kit Cultivo de Hongos</h3>
+                  <p class="product-card__desc">
+                    Cultiva tus propios hongos en casa de forma sostenible.
+                  </p>
+                  <p class="product-card__price">$35.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/jabon-carbon-activado.webp"
+                    alt="Jabón de Carbón Activado"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav14" class="fav-checkbox" />
+                  <label
+                    for="fav14"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Jabón de Carbón Activado</h3>
+                  <p class="product-card__desc">
+                    Limpieza profunda y purificadora para piel sensible.
+                  </p>
+                  <p class="product-card__price">$14.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/leche-almendras.jpg"
+                    alt="Leche de Almendras Artesanal"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav15" class="fav-checkbox" />
+                  <label
+                    for="fav15"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">
+                    Leche de Almendras Artesanal
+                  </h3>
+                  <p class="product-card__desc">
+                    Bebida vegetal sin conservantes, rica en vitamina E.
+                  </p>
+                  <p class="product-card__price">$16.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/RopaReciclable.jpg"
+                    alt="Ropa Reciclada EcoWear"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav16" class="fav-checkbox" />
+                  <label
+                    for="fav16"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Ropa Reciclada EcoWear</h3>
+                  <p class="product-card__desc">
+                    Prendas confeccionadas con fibras 100% recicladas
+                    post-consumo.
+                  </p>
+                  <p class="product-card__price">$78.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/semillas-ermitano.jpg"
+                    alt="Mix Semillas Ermitaño"
+                  />
+                  <span class="product-card__badge badge badge-agotado"
+                    >Agotado</span
+                  >
+                  <input type="checkbox" id="fav17" class="fav-checkbox" />
+                  <label
+                    for="fav17"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Mix Semillas Ermitaño</h3>
+                  <p class="product-card__desc">
+                    Mezcla de semillas orgánicas certificadas para snack
+                    saludable.
+                  </p>
+                  <p class="product-card__price">$19.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-outline">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/vaso-jugo-naranja-colocado-madera_1150-9661.avif"
+                    alt="Vaso de Madera Eco"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav18" class="fav-checkbox" />
+                  <label
+                    for="fav18"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Vaso de Madera Artesanal</h3>
+                  <p class="product-card__desc">
+                    Tallado a mano en madera certificada, sin barnices tóxicos.
+                  </p>
+                  <p class="product-card__price">$42.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/VenomSimbionte.jpg"
+                    alt="Helado Vegano Oscuro"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav19" class="fav-checkbox" />
+                  <label
+                    for="fav19"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Helado Vegano Oscuro</h3>
+                  <p class="product-card__desc">
+                    Postre a base de cacao y leche de coco, libre de lácteos.
+                  </p>
+                  <p class="product-card__price">$11.000</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="../img/products/heladonoazucar.jpg"
+                    alt="Helado Sin Azúcar"
+                  />
+                  <span class="product-card__badge badge badge-stock"
+                    >Stock</span
+                  >
+                  <input type="checkbox" id="fav20" class="fav-checkbox" />
+                  <label
+                    for="fav20"
+                    class="fav-label"
+                    aria-label="Agregar a favoritos"
+                    >♥</label
+                  >
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Helado Sin Azúcar</h3>
+                  <p class="product-card__desc">
+                    Endulzado con stevia orgánica, apto para diabéticos.
+                  </p>
+                  <p class="product-card__price">$10.500</p>
+                </div>
+                <div class="product-card__footer">
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+              </article>
+            </div>
+            <nav class="pagination" aria-label="Paginación">
+              <a href="#">&laquo; Anterior</a>
+              <span class="active">1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">Siguiente &raquo;</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo-text">EcoMarket</span>
+            <p>
+              Somos una plataforma comprometida con el consumo consciente y la
+              sostenibilidad del planeta.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navegar</h4>
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Devoluciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+            <p>📧 hola@ecomarket.co</p>
+            <p>📞 +57 300 123 4567</p>
+            <p>📍 Cúcuta, Colombia</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><img src="../img/icons/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"
+                ><img src="../img/icons/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"
+                ><img src="../img/icons/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Youtube"
+                ><img src="../img/icons/youtube.png" alt="Youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
