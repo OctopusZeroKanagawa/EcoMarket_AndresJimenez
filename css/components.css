@@ -931,3 +931,27 @@ input[type="range"] {
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
+#hogar:checked ~ main .catalog-grid .product-card,
+#moda:checked ~ main .catalog-grid .product-card,
+#cuidado:checked ~ main .catalog-grid .product-card,
+#alimentos:checked ~ main .catalog-grid .product-card {
+  display: none;
+}
+#hogar:checked ~ main .catalog-grid .hogar {
+  display: flex;
+}
+
+#moda:checked ~ main .catalog-grid .moda {
+  display: flex;
+}
+
+#cuidado:checked ~ main .catalog-grid .cuidado {
+  display: flex;
+}
+
+#alimentos:checked ~ main .catalog-grid .alimentos {
+  display: flex;
+}
+#todos:checked ~ main .catalog-grid .product-card {
+  display: flex;
+}
