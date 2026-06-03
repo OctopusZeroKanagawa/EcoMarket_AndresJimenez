@@ -1,5 +1,5 @@
 .product-card {
-  background-color: var(--bg-card);
+  background-color: var(--white);
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--border);
@@ -133,7 +133,7 @@
 }
 
 .contact-form {
-  background-color: var(--bg-card);
+  background-color: var(--white);
   padding: 2rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
@@ -179,7 +179,7 @@
   align-items: flex-start;
   gap: var(--sp-md);
 
-  background-color: var(--bg-card);
+  background-color: var(--white);
 
   padding: 1rem 1.25rem;
 
@@ -562,7 +562,7 @@
   width: 100%;
   max-width: 650px;
 
-  background-color: var(--bg-card);
+  background-color: var(--white);
 
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -741,7 +741,7 @@
 }
 
 .sidebar {
-  background: var(--bg-card);
+  background: var(--white);
   padding: 1.5rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
