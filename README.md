@@ -151,13 +151,13 @@ EcoMarket/
 
 Vista principal de EcoMarket con banner promocional, navegación principal y productos destacados.
 
-![Inicio 1](capturas/home1.png)
+![Inicio 1](img/capturas/home1.png)
 
-![Inicio 2](capturas/home2.png)
+![Inicio 2](img/capturas/home2.png)
 
-![Inicio 3](capturas/home3.png)
+![Inicio 3](img/capturas/home3.png)
 
-![Inicio 4](capturas/home4.png)
+![Inicio 4](img/capturas/home4.png)
 
 ---
 
@@ -165,9 +165,9 @@ Vista principal de EcoMarket con banner promocional, navegación principal y pro
 
 Vista del catálogo completo con filtros laterales, categorías y productos ecológicos.
 
-![Productos 1](capturas/products1.png)
+![Productos 1](img/capturas/products1.png)
 
-![Productos 2](capturas/products2.png)
+![Productos 2](img/capturas/products2.png)
 
 ---
 
@@ -175,13 +175,13 @@ Vista del catálogo completo con filtros laterales, categorías y productos ecol
 
 Sección dedicada a la historia de EcoMarket, sus valores y compromiso con la sostenibilidad.
 
-![Sobre Nosotros 1](capturas/about1.png)
+![Sobre Nosotros 1](img/capturas/about1.png)
 
-![Sobre Nosotros 2](capturas/about2.png)
+![Sobre Nosotros 2](img/capturas/about2.png)
 
-![Sobre Nosotros 3](capturas/about3.png)
+![Sobre Nosotros 3](img/capturas/about3.png)
 
-![Sobre Nosotros 4](capturas/about4.png)
+![Sobre Nosotros 4](img/capturas/about4.png)
 
 ---
 
@@ -189,9 +189,9 @@ Sección dedicada a la historia de EcoMarket, sus valores y compromiso con la so
 
 Formulario de contacto con validaciones visuales y medios de comunicación disponibles para los usuarios.
 
-![Contacto 1](capturas/contact1.png)
+![Contacto 1](img/capturas/contact1.png)
 
-![Contacto 2](capturas/contact2.png)
+![Contacto 2](img/capturas/contact2.png)
 
 ## Aspectos Destacados
 
