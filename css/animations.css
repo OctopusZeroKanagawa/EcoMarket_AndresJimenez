@@ -53,3 +53,102 @@
 .stat-item:hover {
   animation: pulse 1s;
 }
+
+@keyframes barGrow {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+}
+
+.bar-col:nth-child(1) .bar-col__bar {
+  animation-delay: 0.1s;
+}
+.bar-col:nth-child(2) .bar-col__bar {
+  animation-delay: 0.15s;
+}
+.bar-col:nth-child(3) .bar-col__bar {
+  animation-delay: 0.2s;
+}
+.bar-col:nth-child(4) .bar-col__bar {
+  animation-delay: 0.25s;
+}
+.bar-col:nth-child(5) .bar-col__bar {
+  animation-delay: 0.3s;
+}
+.bar-col:nth-child(6) .bar-col__bar {
+  animation-delay: 0.35s;
+}
+.bar-col:nth-child(7) .bar-col__bar {
+  animation-delay: 0.4s;
+}
+
+.metric-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.metric-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.metric-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.metric-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.activity-item:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.activity-item:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.activity-item:nth-child(3) {
+  animation-delay: 0.35s;
+}
+.activity-item:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.activity-item:nth-child(5) {
+  animation-delay: 0.55s;
+}
+
+.rank-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.rank-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.rank-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.rank-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.rank-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.tip-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.tip-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.tip-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes barFill {
+  from {
+    width: 0%;
+  }
+}
+@keyframes ringGrow {
+  from {
+    stroke-dashoffset: 125.6;
+  }
+}

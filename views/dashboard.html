@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../img/icons/logo.png" alt="Logo EcoMarket" />
+            <span class="logo-text">EcoMarket</span>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="dashboard-wrapper">
+      <aside class="dash-sidebar">
+        <span class="dash-sidebar__title">Principal</span>
+        <a href="dashboard.html" class="dash-sidebar__link active">
+          <span class="icon">🌿</span> Mi Impacto
+        </a>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">🛍️</span> Mis Pedidos
+          <span class="dash-sidebar__badge">3</span>
+        </a>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">❤️</span> Favoritos
+        </a>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">🎁</span> Mis Puntos
+        </a>
+
+        <span class="dash-sidebar__title">Comunidad</span>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">🏆</span> Ranking
+        </a>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">🌳</span> Árboles Plantados
+        </a>
+        <a href="#" class="dash-sidebar__link">
+          <span class="icon">💡</span> Retos Eco
+          <span class="dash-sidebar__badge">2</span>
+        </a>
+      </aside>
+
+      <main class="dash-content">
+        <div class="dash-header">
+          <div>
+            <p class="dash-header__greeting">Bienvenido de vuelta 👋</p>
+            <h1>Hola, <span>Andrés</span></h1>
+          </div>
+        </div>
+
+        <div class="level-banner">
+          <div class="level-banner__badge">🌿</div>
+          <div class="level-banner__info">
+            <h3>Tu nivel actual</h3>
+            <p>Guardián del Bosque</p>
+            <div class="level-banner__bar">
+              <div class="level-banner__bar-fill"></div>
+            </div>
+            <p class="level-banner__bar-text">
+              680 / 1.000 pts para <strong>Eco Héroe</strong>
+            </p>
+          </div>
+          <div class="level-banner__pts">
+            <strong>680</strong>
+            <span>Eco-Points</span>
+          </div>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-card__top">
+              <div class="metric-card__icon metric-card__icon--green">🌳</div>
+              <span class="metric-card__delta metric-card__delta--up"
+                >↑ 12%</span
+              >
+            </div>
+            <div class="metric-card__value">14</div>
+            <div class="metric-card__label">Árboles Plantados</div>
+            <div class="metric-card__bar">
+              <div class="metric-card__bar-fill" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-card__top">
+              <div class="metric-card__icon metric-card__icon--teal">☁️</div>
+              <span class="metric-card__delta metric-card__delta--up"
+                >↑ 8%</span
+              >
+            </div>
+            <div class="metric-card__value">32 kg</div>
+            <div class="metric-card__label">CO₂ Reducido</div>
+            <div class="metric-card__bar">
+              <div class="metric-card__bar-fill" style="width: 55%"></div>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-card__top">
+              <div class="metric-card__icon metric-card__icon--amber">⭐</div>
+              <span class="metric-card__delta metric-card__delta--up"
+                >↑ 20%</span
+              >
+            </div>
+            <div class="metric-card__value">680</div>
+            <div class="metric-card__label">Eco-Points</div>
+            <div class="metric-card__bar">
+              <div class="metric-card__bar-fill" style="width: 68%"></div>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-card__top">
+              <div class="metric-card__icon metric-card__icon--blue">💧</div>
+              <span class="metric-card__delta metric-card__delta--down"
+                >↓ 3%</span
+              >
+            </div>
+            <div class="metric-card__value">1.240 L</div>
+            <div class="metric-card__label">Agua Guardada</div>
+            <div class="metric-card__bar">
+              <div class="metric-card__bar-fill" style="width: 82%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-main-grid">
+          <div class="dash-panel">
+            <div class="dash-panel__head">
+              <div>
+                <h3>Impacto Mensual</h3>
+                <p>Eco-Points acumulados por mes en 2026/p>
+              </div>
+            </div>
+            <div class="dash-panel__body">
+              <div class="bar-chart">
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 38%"
+                    data-val="38 pts"
+                  ></div>
+                  <span class="bar-col__label">Ene</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 52%"
+                    data-val="52 pts"
+                  ></div>
+                  <span class="bar-col__label">Feb</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 45%"
+                    data-val="45 pts"
+                  ></div>
+                  <span class="bar-col__label">Mar</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 67%"
+                    data-val="67 pts"
+                  ></div>
+                  <span class="bar-col__label">Abr</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 75%"
+                    data-val="75 pts"
+                  ></div>
+                  <span class="bar-col__label">May</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar"
+                    style="height: 60%"
+                    data-val="60 pts"
+                  ></div>
+                  <span class="bar-col__label">Jun</span>
+                </div>
+                <div class="bar-col">
+                  <div
+                    class="bar-col__bar bar-col__bar--highlight"
+                    style="height: 88%"
+                    data-val="88 pts"
+                  ></div>
+                  <span class="bar-col__label">Jul</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-panel">
+            <div class="dash-panel__head">
+              <div>
+                <h3>Actividad Reciente</h3>
+                <p>Tus últimas acciones sostenibles</p>
+              </div>
+            </div>
+            <div class="dash-panel__body">
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-item__dot activity-item__dot--buy">
+                    🛍️
+                  </div>
+                  <div class="activity-item__text">
+                    <strong>Compra: Cepillo de Bambú</strong>
+                    <span>Hace 2 horas</span>
+                  </div>
+                  <span class="activity-item__points">+15 pts</span>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-item__dot activity-item__dot--tree">
+                    🌳
+                  </div>
+                  <div class="activity-item__text">
+                    <strong>Árbol plantado en Amazonas</strong>
+                    <span>Ayer, 10:34 am</span>
+                  </div>
+                  <span class="activity-item__points">+50 pts</span>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-item__dot activity-item__dot--points">
+                    ⭐
+                  </div>
+                  <div class="activity-item__text">
+                    <strong>Reto completado: 5 productos eco</strong>
+                    <span>Hace 3 días</span>
+                  </div>
+                  <span class="activity-item__points">+80 pts</span>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-item__dot activity-item__dot--buy">
+                    🛍️
+                  </div>
+                  <div class="activity-item__text">
+                    <strong>Compra: Kit Utensilios Bambú</strong>
+                    <span>Hace 5 días</span>
+                  </div>
+                  <span class="activity-item__points">+35 pts</span>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-item__dot activity-item__dot--co2">
+                    ♻️
+                  </div>
+                  <div class="activity-item__text">
+                    <strong>Compensación CO₂: 8 kg</strong>
+                    <span>Hace 1 semana</span>
+                  </div>
+                  <span class="activity-item__points">+40 pts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dash-panel">
+            <div class="dash-panel__head">
+              <div>
+                <h3>💡 Consejos Eco</h3>
+                <p>Acciones para sumar más puntos</p>
+              </div>
+            </div>
+            <div class="dash-panel__body">
+              <div class="tip-card">
+                <span class="tip-card__icon">🛁</span>
+                <div class="tip-card__text">
+                  <strong>Ducha de 5 minutos</strong>
+                  <p>Ahorra hasta 60 L de agua por baño.</p>
+                </div>
+                <span class="tip-card__pts">+10 pts</span>
+              </div>
+
+              <div class="tip-card">
+                <span class="tip-card__icon">🚲</span>
+                <div class="tip-card__text">
+                  <strong>Usa la bici hoy</strong>
+                  <p>Evita emisiones y mejora tu salud.</p>
+                </div>
+                <span class="tip-card__pts">+20 pts</span>
+              </div>
+
+              <div class="tip-card">
+                <span class="tip-card__icon">🌱</span>
+                <div class="tip-card__text">
+                  <strong>Planta un árbol</strong>
+                  <p>Dona a nuestra campaña forestal.</p>
+                </div>
+                <span class="tip-card__pts">+50 pts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <nav class="dash-mobile-nav">
+      <a href="dashboard.html" class="active">
+        <span>🌿</span>
+        <span>Impacto</span>
+      </a>
+      <a href="productos.html">
+        <span>🛍️</span>
+        <span>Tienda</span>
+      </a>
+      <a href="#">
+        <span>⭐</span>
+        <span>Puntos</span>
+      </a>
+      <a href="#">
+        <span>🏆</span>
+        <span>Ranking</span>
+      </a>
+      <a href="contacto.html">
+        <span>👤</span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </body>
+</html>
