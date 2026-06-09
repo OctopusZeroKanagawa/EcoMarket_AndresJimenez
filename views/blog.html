@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Vida Sostenible — EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../img/icons/logo.png" alt="Logo EcoMarket" />
+            <span class="logo-text">EcoMarket</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <div class="container">
+          <h1>🌿 Vida Sostenible</h1>
+          <p>
+            Ideas, consejos y reflexiones para vivir de forma más consciente con
+            el planeta.
+          </p>
+        </div>
+      </section>
+
+      <section style="padding-block: var(--sp-xl)">
+        <div class="container">
+          <input type="radio" name="blogfilter" id="bf-todos" checked />
+          <input type="radio" name="blogfilter" id="bf-reciclaje" />
+          <input type="radio" name="blogfilter" id="bf-energia" />
+          <input type="radio" name="blogfilter" id="bf-habitos" />
+          <input type="radio" name="blogfilter" id="bf-naturaleza" />
+
+          <div class="blog-filters blog-filters-row">
+            <label for="bf-todos" class="blog-filter-label">Todos</label>
+            <label for="bf-reciclaje" class="blog-filter-label"
+              >♻️ Reciclaje</label
+            >
+            <label for="bf-energia" class="blog-filter-label"
+              >⚡ Energía Limpia</label
+            >
+            <label for="bf-habitos" class="blog-filter-label"
+              >🌱 Hábitos Verdes</label
+            >
+            <label for="bf-naturaleza" class="blog-filter-label"
+              >🍃 Naturaleza</label
+            >
+          </div>
+
+          <div class="blog-layout">
+            <div class="blog-main">
+              <article class="article-featured">
+                <img
+                  class="article-featured__img"
+                  src="../img/hero/bg.png"
+                  alt="Bosque tropical sostenible"
+                />
+                <div class="article-featured__overlay"></div>
+                <div class="article-featured__body">
+                  <span class="article-tag article-tag--naturaleza"
+                    >🍃 Naturaleza</span
+                  >
+                  <h2>
+                    Cómo los bosques urbanos están transformando nuestras
+                    ciudades
+                  </h2>
+                  <p>
+                    Cada árbol plantado en una ciudad reduce hasta 1 kg de CO₂
+                    al año, mejora la calidad del aire y crea espacios de
+                    bienestar para miles de personas. Conoce los proyectos más
+                    inspiradores de América Latina.
+                  </p>
+                  <div class="article-featured__meta">
+                    <div class="article-author">
+                      <img src="../img/icons/Persona1.png" alt="Laura M." />
+                      Laura Martínez
+                    </div>
+                    <span class="article-date">📅 12 junio 2026</span>
+                    <span class="article-read-time">⏱ 6 min de lectura</span>
+                  </div>
+                  <div style="margin-top: 1.25rem">
+                    <a href="#" class="btn">Leer artículo →</a>
+                  </div>
+                </div>
+              </article>
+
+              <div
+                class="section-header"
+                style="text-align: left; margin-bottom: 1.5rem"
+              >
+                <h2>Artículos Recientes</h2>
+                <p>
+                  Explora nuestra colección de contenido editorial sobre
+                  sostenibilidad
+                </p>
+              </div>
+
+              <div class="articles-grid">
+                <article class="article-card">
+                  <div class="article-card__img">
+                    <img
+                      src="../img/products/fertilizante-plantas.jpg"
+                      alt="Reciclaje en casa"
+                    />
+                    <span
+                      class="article-card__tag article-tag article-tag--reciclaje"
+                      >♻️ Reciclaje</span
+                    >
+                  </div>
+                  <div class="article-card__body">
+                    <h3 class="article-card__title">
+                      Guía completa para reciclar en casa sin complicarte
+                    </h3>
+                    <p class="article-card__excerpt">
+                      Separar residuos no tiene que ser difícil. Te mostramos un
+                      sistema de 3 contenedores que puedes implementar hoy mismo
+                      en tu hogar.
+                    </p>
+                    <div class="article-meta">
+                      <div class="article-author">
+                        <img src="../img/icons/Persona2.webp" alt="Carlos G." />
+                        Carlos G.
+                      </div>
+                      <span class="article-read-time">⏱ 4 min</span>
+                    </div>
+                  </div>
+                  <div class="article-card__footer">
+                    <span class="article-date">8 jun 2026</span>
+                    <a href="#" class="article-card__read">Leer →</a>
+                  </div>
+                </article>
+
+                <article class="article-card">
+                  <div class="article-card__img">
+                    <img
+                      src="../img/products/fire-flower.jpg"
+                      alt="Energía solar"
+                    />
+                    <span
+                      class="article-card__tag article-tag article-tag--energia"
+                      >⚡ Energía</span
+                    >
+                  </div>
+                  <div class="article-card__body">
+                    <h3 class="article-card__title">
+                      Energía solar en el hogar: mitos, costos y cómo empezar
+                    </h3>
+                    <p class="article-card__excerpt">
+                      ¿Cuánto cuesta realmente instalar paneles solares?
+                      Desmitificamos los 5 argumentos más comunes en contra de
+                      las energías renovables.
+                    </p>
+                    <div class="article-meta">
+                      <div class="article-author">
+                        <img src="../img/icons/Persona3.png" alt="Sofía P." />
+                        Sofía P.
+                      </div>
+                      <span class="article-read-time">⏱ 7 min</span>
+                    </div>
+                  </div>
+                  <div class="article-card__footer">
+                    <span class="article-date">5 jun 2026</span>
+                    <a href="#" class="article-card__read">Leer →</a>
+                  </div>
+                </article>
+
+                <article class="article-card">
+                  <div class="article-card__img">
+                    <img
+                      src="../img/products/cepillo-bambu.webp"
+                      alt="Hábitos verdes"
+                    />
+                    <span
+                      class="article-card__tag article-tag article-tag--habitos"
+                      >🌱 Hábitos</span
+                    >
+                  </div>
+                  <div class="article-card__body">
+                    <h3 class="article-card__title">
+                      30 días de hábitos verdes: el reto que cambió mi vida
+                    </h3>
+                    <p class="article-card__excerpt">
+                      Una ingeniera ambiental documenta su experiencia de un mes
+                      viviendo de forma completamente cero residuos en Bogotá.
+                    </p>
+                    <div class="article-meta">
+                      <div class="article-author">
+                        <img src="../img/icons/Persona1.png" alt="Ana R." />
+                        Ana R.
+                      </div>
+                      <span class="article-read-time">⏱ 5 min</span>
+                    </div>
+                  </div>
+                  <div class="article-card__footer">
+                    <span class="article-date">1 jun 2026</span>
+                    <a href="#" class="article-card__read">Leer →</a>
+                  </div>
+                </article>
+
+                <article class="article-card">
+                  <div class="article-card__img">
+                    <img
+                      src="../img/products/HongoMedicinal.jpg"
+                      alt="Hongos medicinales"
+                    />
+                    <span
+                      class="article-card__tag article-tag article-tag--naturaleza"
+                      >🍃 Naturaleza</span
+                    >
+                  </div>
+                  <div class="article-card__body">
+                    <h3 class="article-card__title">
+                      Hongos medicinales: el superalimento que el planeta
+                      necesita
+                    </h3>
+                    <p class="article-card__excerpt">
+                      El cultivo de hongos consume 5 veces menos agua que la
+                      ganadería y puede crecer en residuos agrícolas. Una
+                      revolución silenciosa.
+                    </p>
+                    <div class="article-meta">
+                      <div class="article-author">
+                        <img src="../img/icons/Persona2.webp" alt="Miguel T." />
+                        Miguel T.
+                      </div>
+                      <span class="article-read-time">⏱ 8 min</span>
+                    </div>
+                  </div>
+                  <div class="article-card__footer">
+                    <span class="article-date">28 may 2026</span>
+                    <a href="#" class="article-card__read">Leer →</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <aside class="blog-sidebar">
+              <div class="blog-widget">
+                <div class="blog-widget__head">
+                  <h3>Buscar artículos</h3>
+                </div>
+                <div class="blog-widget__body">
+                  <div class="blog-search">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Buscar en el blog..." />
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-widget">
+                <div class="blog-widget__head">
+                  <h3>Categorías</h3>
+                </div>
+                <div class="blog-widget__body">
+                  <div class="blog-cat-list">
+                    <div class="blog-cat-item">
+                      <span>♻️ Reciclaje</span>
+                      <span>12</span>
+                    </div>
+                    <div class="blog-cat-item">
+                      <span>⚡ Energía Limpia</span>
+                      <span>8</span>
+                    </div>
+                    <div class="blog-cat-item">
+                      <span>🌱 Hábitos Verdes</span>
+                      <span>15</span>
+                    </div>
+                    <div class="blog-cat-item">
+                      <span>🍃 Naturaleza</span>
+                      <span>9</span>
+                    </div>
+                    <div class="blog-cat-item">
+                      <span>💡 Consejos</span>
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-widget">
+                <div class="blog-widget__head">
+                  <h3>🔥 Más leídos</h3>
+                </div>
+                <div class="blog-widget__body">
+                  <div class="article-list-item">
+                    <div class="article-list-item__img">
+                      <img
+                        src="../img/products/jabon-carbon-activado.webp"
+                        alt="Jabón carbón"
+                      />
+                    </div>
+                    <div class="article-list-item__body">
+                      <h4>Jabón de carbón activado: el limpiador del futuro</h4>
+                      <span>📅 10 jun 2026 · ⏱ 3 min</span>
+                    </div>
+                  </div>
+
+                  <div class="article-list-item">
+                    <div class="article-list-item__img">
+                      <img
+                        src="../img/products/crema-cuerpo.jpg"
+                        alt="Crema cuerpo"
+                      />
+                    </div>
+                    <div class="article-list-item__body">
+                      <h4>
+                        Cómo hacer tu propia crema corporal natural en 10 min
+                      </h4>
+                      <span>📅 3 jun 2026 · ⏱ 4 min</span>
+                    </div>
+                  </div>
+
+                  <div class="article-list-item">
+                    <div class="article-list-item__img">
+                      <img
+                        src="../img/products/semillas-ermitano.jpg"
+                        alt="Semillas"
+                      />
+                    </div>
+                    <div class="article-list-item__body">
+                      <h4>
+                        Guía para comenzar tu huerta en casa con semillas
+                        nativas
+                      </h4>
+                      <span>📅 28 may 2026 · ⏱ 6 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-newsletter">
+                <h3>📬 Suscríbete</h3>
+                <p>
+                  Recibe los mejores artículos sobre vida sostenible cada
+                  semana.
+                </p>
+                <input type="email" placeholder="tu@email.com" />
+                <a href="#" class="btn">Suscribirme gratis</a>
+              </div>
+
+              <div class="blog-widget">
+                <div class="blog-widget__head">
+                  <h3>Etiquetas populares</h3>
+                </div>
+                <div class="blog-widget__body">
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                    <span class="article-tag article-tag--reciclaje"
+                      >♻️ Reciclaje</span
+                    >
+                    <span class="article-tag article-tag--energia"
+                      >⚡ Energía</span
+                    >
+                    <span class="article-tag article-tag--habitos"
+                      >🌱 Hábitos</span
+                    >
+                    <span class="article-tag article-tag--naturaleza"
+                      >🍃 Bosques</span
+                    >
+                    <span class="article-tag article-tag--consejos"
+                      >💡 Consejos</span
+                    >
+                    <span class="article-tag article-tag--reciclaje"
+                      >🏠 Hogar</span
+                    >
+                    <span class="article-tag article-tag--energia"
+                      >☀️ Solar</span
+                    >
+                    <span class="article-tag article-tag--habitos"
+                      >🥦 Vegetal</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>EcoMarket</h4>
+
+            <p>
+              Productos sostenibles diseñados para un estilo de vida responsable
+              con el planeta.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Política de Devoluciones</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+
+            <p>📧 hola@ecomarket.co</p>
+            <p>📞 +57 300 123 4567</p>
+            <p>📍 Cúcuta, Colombia</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <img src="../img/icons/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Twitter">
+                <img src="../img/icons/twitter.png" alt="Twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img src="../img/icons/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Youtube">
+                <img src="../img/icons/youtube.png" alt="Youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
