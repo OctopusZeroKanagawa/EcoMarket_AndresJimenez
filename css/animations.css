@@ -175,3 +175,8 @@
 .article-featured {
   animation: fadeInUp 0.7s ease 0.1s both;
 }
+@keyframes barFill {
+  from {
+    width: 0 !important;
+  }
+}

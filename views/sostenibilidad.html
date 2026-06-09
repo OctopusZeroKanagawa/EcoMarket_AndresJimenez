@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sostenibilidad</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../img/icons/logo.png" alt="Logo EcoMarket" />
+            <span class="logo-text">EcoMarket</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li>
+              <a href="sostenibilidad.html" class="active">Sostenibilidad</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sostenibilidad-hero">
+        <div class="container">
+          <h1>🌱 Calculadora de huella de carbono</h1>
+          <p>
+            Descubre tu impacto ambiental y cómo mejorarlo. Completa el
+            formulario para obtener tu estimación personalizada.
+          </p>
+        </div>
+      </section>
+
+      <section class="calc-section">
+        <div class="container">
+          <div class="calc-progress">
+            <div class="calc-step-indicator calc-step-indicator--active">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.3rem;
+                "
+              >
+                <div class="calc-step-indicator__dot">🏠</div>
+                <span class="calc-step-indicator__label">Hogar</span>
+              </div>
+              <div class="calc-step-indicator__line"></div>
+            </div>
+
+            <div class="calc-step-indicator">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.3rem;
+                "
+              >
+                <div class="calc-step-indicator__dot">🚗</div>
+                <span class="calc-step-indicator__label">Transporte</span>
+              </div>
+              <div class="calc-step-indicator__line"></div>
+            </div>
+
+            <div class="calc-step-indicator">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.3rem;
+                "
+              >
+                <div class="calc-step-indicator__dot">🥦</div>
+                <span class="calc-step-indicator__label">Alimentación</span>
+              </div>
+              <div class="calc-step-indicator__line"></div>
+            </div>
+
+            <div class="calc-step-indicator">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.3rem;
+                "
+              >
+                <div class="calc-step-indicator__dot">🛍️</div>
+                <span class="calc-step-indicator__label">Consumo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-layout">
+            <div class="calc-form-col">
+              <div class="calc-block">
+                <div class="calc-block__head">
+                  <div class="calc-block__icon">🏠</div>
+                  <h3>1. Hogar</h3>
+                </div>
+                <div class="calc-block__body">
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >Consumo de Energía Mensual</label
+                    >
+                    <div class="range-wrapper">
+                      <div class="range-value-badge">350 <span>kWh</span></div>
+                      <input
+                        type="range"
+                        class="eco-range"
+                        min="0"
+                        max="1000"
+                        value="350"
+                        step="10"
+                        aria-label="Consumo de energía mensual en kWh"
+                        style="--val: 35%"
+                      />
+                      <div class="range-ticks">
+                        <span>0</span>
+                        <span>250</span>
+                        <span>500</span>
+                        <span>750</span>
+                        <span>1000+</span>
+                      </div>
+                    </div>
+                    <p class="calc-field__hint">
+                      El consumo promedio de un hogar es de aproximadamente 270
+                      kWh. Consulta tu factura de luz para un dato exacto.
+                    </p>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >¿Qué fuente de energía usas?</label
+                    >
+                    <div class="radio-cards radio-cards--3">
+                      <input type="radio" name="energia" id="e-red" checked />
+                      <label for="e-red" class="radio-card-label">
+                        <span class="radio-card-label__icon">⚡</span>
+                        <span class="radio-card-label__text"
+                          >Red eléctrica</span
+                        >
+                      </label>
+
+                      <input type="radio" name="energia" id="e-solar" />
+                      <label for="e-solar" class="radio-card-label">
+                        <span class="radio-card-label__icon">☀️</span>
+                        <span class="radio-card-label__text"
+                          >Energía solar</span
+                        >
+                      </label>
+
+                      <input type="radio" name="energia" id="e-mixta" />
+                      <label for="e-mixta" class="radio-card-label">
+                        <span class="radio-card-label__icon">🔋</span>
+                        <span class="radio-card-label__text">Mixta</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >Personas en el hogar</label
+                    >
+                    <div class="radio-cards">
+                      <input type="radio" name="personas" id="p1" />
+                      <label for="p1" class="radio-card-label">
+                        <span class="radio-card-label__icon">🧍</span>
+                        <span class="radio-card-label__text">1 persona</span>
+                      </label>
+
+                      <input type="radio" name="personas" id="p2" checked />
+                      <label for="p2" class="radio-card-label">
+                        <span class="radio-card-label__icon">👫</span>
+                        <span class="radio-card-label__text">2 personas</span>
+                      </label>
+
+                      <input type="radio" name="personas" id="p3" />
+                      <label for="p3" class="radio-card-label">
+                        <span class="radio-card-label__icon">👨‍👩‍👦</span>
+                        <span class="radio-card-label__text">3–4 personas</span>
+                      </label>
+
+                      <input type="radio" name="personas" id="p5" />
+                      <label for="p5" class="radio-card-label">
+                        <span class="radio-card-label__icon">👨‍👩‍👧‍👦</span>
+                        <span class="radio-card-label__text">5 o más</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-block">
+                <div class="calc-block__head">
+                  <div class="calc-block__icon">🚗</div>
+                  <h3>2. Transporte</h3>
+                </div>
+                <div class="calc-block__body">
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >¿Cuál es tu medio de transporte principal?</label
+                    >
+                    <div class="radio-cards radio-cards--3">
+                      <input
+                        type="radio"
+                        name="transporte"
+                        id="t-auto"
+                        checked
+                      />
+                      <label for="t-auto" class="radio-card-label">
+                        <span class="radio-card-label__icon">🚗</span>
+                        <span class="radio-card-label__text">Auto Privado</span>
+                      </label>
+
+                      <input type="radio" name="transporte" id="t-publico" />
+                      <label for="t-publico" class="radio-card-label">
+                        <span class="radio-card-label__icon">🚌</span>
+                        <span class="radio-card-label__text"
+                          >Transporte Público</span
+                        >
+                      </label>
+
+                      <input type="radio" name="transporte" id="t-bici" />
+                      <label for="t-bici" class="radio-card-label">
+                        <span class="radio-card-label__icon">🚲</span>
+                        <span class="radio-card-label__text"
+                          >Bicicleta / A pie</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label" for="km-mes">
+                      Kilómetros recorridos mensualmente
+                    </label>
+                    <div class="input-with-unit">
+                      <span class="input-with-unit__icon">🚗</span>
+                      <input
+                        type="number"
+                        id="km-mes"
+                        name="km"
+                        placeholder="Ej. 1200"
+                        min="0"
+                        max="10000"
+                      />
+                      <span class="input-with-unit__suffix">KM / MES</span>
+                    </div>
+                    <p class="calc-field__hint">
+                      Ingresa la distancia estimada de tus traslados habituales
+                      para calcular las emisiones.
+                    </p>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >Vuelos al año (ida y vuelta)</label
+                    >
+                    <div class="range-wrapper">
+                      <div class="range-value-badge">
+                        2 <span>vuelos/año</span>
+                      </div>
+                      <input
+                        type="range"
+                        class="eco-range"
+                        min="0"
+                        max="20"
+                        value="2"
+                        step="1"
+                        aria-label="Número de vuelos al año"
+                        style="--val: 10%"
+                      />
+                      <div class="range-ticks">
+                        <span>0</span>
+                        <span>5</span>
+                        <span>10</span>
+                        <span>15</span>
+                        <span>20+</span>
+                      </div>
+                    </div>
+                    <p class="calc-field__hint">
+                      Un vuelo de largo recorrido puede producir hasta 1.5
+                      toneladas de CO₂ por pasajero.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-block">
+                <div class="calc-block__head">
+                  <div class="calc-block__icon">🥦</div>
+                  <h3>3. Alimentación</h3>
+                </div>
+                <div class="calc-block__body">
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >¿Cómo describirías tu dieta?</label
+                    >
+                    <div class="radio-cards">
+                      <input
+                        type="radio"
+                        name="dieta"
+                        id="d-omnivora"
+                        checked
+                      />
+                      <label for="d-omnivora" class="radio-card-label">
+                        <span class="radio-card-label__icon">🍖</span>
+                        <span class="radio-card-label__text">Omnívora</span>
+                      </label>
+
+                      <input type="radio" name="dieta" id="d-flex" />
+                      <label for="d-flex" class="radio-card-label">
+                        <span class="radio-card-label__icon">🥗</span>
+                        <span class="radio-card-label__text">Flexitariana</span>
+                      </label>
+
+                      <input type="radio" name="dieta" id="d-veg" />
+                      <label for="d-veg" class="radio-card-label">
+                        <span class="radio-card-label__icon">🌱</span>
+                        <span class="radio-card-label__text">Vegetariana</span>
+                      </label>
+
+                      <input type="radio" name="dieta" id="d-vegana" />
+                      <label for="d-vegana" class="radio-card-label">
+                        <span class="radio-card-label__icon">🥦</span>
+                        <span class="radio-card-label__text">Vegana</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label">
+                      ¿Qué porcentaje de tu comida es local u orgánica?
+                    </label>
+                    <div class="range-wrapper">
+                      <div class="range-value-badge">30 <span>%</span></div>
+                      <input
+                        type="range"
+                        class="eco-range"
+                        min="0"
+                        max="100"
+                        value="30"
+                        step="5"
+                        aria-label="Porcentaje de comida local u orgánica"
+                        style="--val: 30%"
+                      />
+                      <div class="range-ticks">
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+                      </div>
+                    </div>
+                    <p class="calc-field__hint">
+                      Los alimentos locales reducen emisiones de transporte
+                      hasta en un 40%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-block">
+                <div class="calc-block__head">
+                  <div class="calc-block__icon">🛍️</div>
+                  <h3>4. Consumo</h3>
+                </div>
+                <div class="calc-block__body">
+                  <div class="calc-field">
+                    <label class="calc-field__label">
+                      ¿Con qué frecuencia compras ropa nueva?
+                    </label>
+                    <select class="eco-select" name="ropa" id="ropa">
+                      <option value="">Selecciona una opción</option>
+                      <option value="semanal">Cada semana</option>
+                      <option value="mensual">Una vez al mes</option>
+                      <option value="trimestral" selected>
+                        Una vez cada 3 meses
+                      </option>
+                      <option value="anual">Una o dos veces al año</option>
+                      <option value="segunda">Solo ropa de segunda mano</option>
+                    </select>
+                    <p class="calc-field__hint">
+                      La industria textil genera el 10% de las emisiones
+                      globales de CO₂.
+                    </p>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label">
+                      ¿Cuántos kg de basura generas a la semana?
+                    </label>
+                    <div class="range-wrapper">
+                      <div class="range-value-badge">
+                        4 <span>kg / semana</span>
+                      </div>
+                      <input
+                        type="range"
+                        class="eco-range"
+                        min="0"
+                        max="20"
+                        value="4"
+                        step="0.5"
+                        aria-label="Kilogramos de basura por semana"
+                        style="--val: 20%"
+                      />
+                      <div class="range-ticks">
+                        <span>0</span>
+                        <span>5</span>
+                        <span>10</span>
+                        <span>15</span>
+                        <span>20+</span>
+                      </div>
+                    </div>
+                    <p class="calc-field__hint">
+                      El promedio en Colombia es de ~0.7 kg por persona por día.
+                    </p>
+                  </div>
+
+                  <div class="calc-field">
+                    <label class="calc-field__label"
+                      >¿Practicas el reciclaje en casa?</label
+                    >
+                    <div class="radio-cards radio-cards--3">
+                      <input type="radio" name="reciclaje" id="r-siempre" />
+                      <label for="r-siempre" class="radio-card-label">
+                        <span class="radio-card-label__icon">♻️</span>
+                        <span class="radio-card-label__text">Siempre</span>
+                      </label>
+
+                      <input
+                        type="radio"
+                        name="reciclaje"
+                        id="r-aveces"
+                        checked
+                      />
+                      <label for="r-aveces" class="radio-card-label">
+                        <span class="radio-card-label__icon">🤔</span>
+                        <span class="radio-card-label__text">A veces</span>
+                      </label>
+
+                      <input type="radio" name="reciclaje" id="r-nunca" />
+                      <label for="r-nunca" class="radio-card-label">
+                        <span class="radio-card-label__icon">🗑️</span>
+                        <span class="radio-card-label__text">Nunca</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-submit">
+                <button type="submit" class="btn">Calcular mi Impacto →</button>
+                <p>
+                  Al hacer clic, aceptas nuestra política de privacidad y el
+                  procesamiento de tus datos ambientales.
+                </p>
+              </div>
+            </div>
+
+            <aside class="calc-result">
+              <div class="calc-result__head">
+                <h3>🌍 Tu Estimación</h3>
+                <p>Resultado en tiempo real</p>
+              </div>
+
+              <div class="calc-result__score">
+                <div class="calc-result__number">4.8</div>
+                <div class="calc-result__unit">toneladas de CO₂ / año</div>
+                <div class="calc-result__label">Por debajo del promedio 🌿</div>
+              </div>
+
+              <div class="calc-result__scale">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.4rem;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 0.78rem;
+                      font-weight: 600;
+                      color: var(--text);
+                    "
+                    >Tu nivel de impacto</span
+                  >
+                  <span
+                    style="font-size: 0.78rem; font-weight: 700; color: #2e7d32"
+                    >Bajo ✅</span
+                  >
+                </div>
+                <div class="scale-bar">
+                  <div class="scale-bar__pointer" style="left: 35%"></div>
+                </div>
+                <div class="scale-labels">
+                  <span>🟢 Bajo</span>
+                  <span>🟡 Medio</span>
+                  <span>🔴 Alto</span>
+                </div>
+              </div>
+
+              <div class="calc-result__breakdown">
+                <p
+                  style="
+                    font-size: 0.82rem;
+                    font-weight: 700;
+                    color: var(--text);
+                    margin-bottom: 0.25rem;
+                  "
+                >
+                  Desglose por categoría
+                </p>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-item__top">
+                    <span>🏠 Hogar</span>
+                    <span>1.8 t</span>
+                  </div>
+                  <div class="breakdown-bar">
+                    <div class="breakdown-bar__fill" style="width: 38%"></div>
+                  </div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-item__top">
+                    <span>🚗 Transporte</span>
+                    <span>1.5 t</span>
+                  </div>
+                  <div class="breakdown-bar">
+                    <div class="breakdown-bar__fill" style="width: 31%"></div>
+                  </div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-item__top">
+                    <span>🥦 Alimentación</span>
+                    <span>0.9 t</span>
+                  </div>
+                  <div class="breakdown-bar">
+                    <div class="breakdown-bar__fill" style="width: 19%"></div>
+                  </div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-item__top">
+                    <span>🛍️ Consumo</span>
+                    <span>0.6 t</span>
+                  </div>
+                  <div class="breakdown-bar">
+                    <div class="breakdown-bar__fill" style="width: 12%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-result__cta">
+                <a href="productos.html" class="btn">
+                  🌿 Ver productos para reducirla
+                </a>
+                <a href="dashboard.html" class="btn btn-outline">
+                  📊 Ver mi Dashboard
+                </a>
+                <p class="calc-result__disclaimer">
+                  Estimación basada en promedios regionales. Para una medición
+                  precisa, consulta con un especialista.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>EcoMarket</h4>
+
+            <p>
+              Productos sostenibles diseñados para un estilo de vida responsable
+              con el planeta.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Política de Devoluciones</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+
+            <p>📧 hola@ecomarket.co</p>
+            <p>📞 +57 300 123 4567</p>
+            <p>📍 Cúcuta, Colombia</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <img src="../img/icons/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Twitter">
+                <img src="../img/icons/twitter.png" alt="Twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img src="../img/icons/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Youtube">
+                <img src="../img/icons/youtube.png" alt="Youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
